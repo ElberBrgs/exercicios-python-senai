@@ -1,3 +1,6 @@
+import os
+os.system("clear || cls")
+
 nome: str
 idade: int
 peso: float
