@@ -14,14 +14,14 @@ quantidadeMaca = int(input("Quantos Kg de maçã deseja comprar? "))
 valorMorango: float = 2.50
 valorMaca: float = 1.80
 valorTotal = valorMorango + valorMaca
-quantidadeFrutas: int = quantidadeMorango + quantidadeMaca
-desconto: float 
+quantidadeFrutas = quantidadeMorango + quantidadeMaca
+desconto: float
 
 os.system("clear || cls")
 
-print(f"Quantidade de morangos: {quantidadeMorango}.")    
-print(f"Quantidade de maçã: {quantidadeMaca}.")    
-print(f"Quantidade total de frutas: {quantidadeFrutas}.")    
+print(f"Kg de morango: {quantidadeMorango}.")    
+print(f"Kg de maçã: {quantidadeMaca}.")    
+print(f"Peso total das frutas: {quantidadeFrutas} Kg.")    
 
 if quantidadeFrutas >= 5:
     valorMorango = 2.20
