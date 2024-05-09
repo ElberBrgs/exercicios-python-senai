@@ -5,17 +5,20 @@ system("clear || cls")
 soma = 0
 contadorNotas = 0
 
-print("===OPÇÕES===")
-print("S- Inserir mais uma nota.")
-print("P- Ver quantas notas foram inseridas.")
-print("N- Calcular a média das notas informadas.")
 
 while True:
+    print("===OPÇÕES===")
+    print("S- Inserir mais uma nota.")
+    print("P- Ver quantas notas foram inseridas.")
+    print("N- Calcular a média das notas informadas.")
+    
     opcao = input("Insira a opção desejada: ")
     nota = float(input("Digite uma nota: "))
 
     opcao = opcao.upper()    
-    
+    if opcao == 'S':
+        soma += nota
+        contadorNotas += 1
 
     if opcao == 'P':
         contadorNotas += 1
@@ -29,4 +32,3 @@ while True:
 
 media = soma / contadorNotas    
 print(f"Média: {media}")
-
