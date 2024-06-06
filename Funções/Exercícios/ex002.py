@@ -7,13 +7,12 @@ def logoSenai():
     print(" === ===== === ")
 
 def mostrarTabuada(n1):
-        multiplicacao = n1 * 10
-        print(f" {n1} x {i+1} = {multiplicacao}")
+    for i in range(1,11):
+        multiplicacao = n1 * i
+        print(f" {n1} x {i} = {multiplicacao}")
     
-
 logoSenai()
 numero = int(input("Digite um número para tabuada: "))
 
 logoSenai()
-
 tabuada = mostrarTabuada(numero)
